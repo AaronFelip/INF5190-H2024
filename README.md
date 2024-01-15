@@ -27,7 +27,7 @@ Si vous avez des questions sur la matière vu en classe ou dans les labos,
 je vous recommande de poser vos questions dans le Discord du cours. 
 L'un de vos camarades vous répondra, autrement si vous avez besoin d'une 
 aide personnalisé vous pouvez me rejoindre par 
-[courriel](mailto:osorio_arancibia.aaron@courrier.uqam.ca?subject=Aide%20labo%20INF3190).
+[courriel](mailto:osorio_arancibia.aaron@courrier.uqam.ca?subject=Aide%20labo%20INF5190).
 
 ## Liens utiles:
 - [Validateur du W3C pour le html](https://validator.w3.org/)
