@@ -1,7 +1,9 @@
 ## À propos:
-Ce dépot contient les corrections des labos du groupe 20, n'hésitez pas à le consulter 
+Ce dépot contient les corrections des labos du groupe 100, n'hésitez pas à le consulter 
 pour vos travaux pratiques.  
-**Je push la correction du labo en cours au plus tard le mercredi à 23h59.**
+**Je push la correction du labo en cours au plus tard le dimanche à 23h59. Il est possible que
+la solution de certains labos ne soient pas disponibles à des fins de consultations ultérieur. 
+Votre présence aux laboratoires est requises.**
 
 ## Laboratoires:
 - Semaine 1: Pas de labo cette semaine
@@ -34,7 +36,6 @@ aide personnalisé vous pouvez me rejoindre par
 - [Documentation de Flask](https://flask.palletsprojects.com/en/2.3.x/)
 - [Télécharger Python](https://www.python.org/downloads/)
 - [IDE PyCharm - gratuit pour les étudiants](https://www.jetbrains.com/pycharm/)
-- [IDE WebStorm - gratuit pour les étudiants](https://www.jetbrains.com/webstorm/)
 &nbsp;  
 &nbsp;  
 
