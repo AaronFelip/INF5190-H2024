@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+    {{ erreur }}
+    <form action="/submit" method="POST">
+        <label for="nom">Nom: </label>
+        <input type="text" id="nom" name="nom" value="{{ nom }}">
+        <br><br>
+        <label for="prenom">Prénom: </label>
+        <input type="text" id="prenom" name="prenom" value="{{ prenom }}">
+        <br><br>
+        <label for="age">Âge: </label>
+        <input type="text" id="age" name="age" value="{{ age }}">
+        <br><br>
+        <button type="submit">Soumettre</button>
+    </form>
+</body>
+</html>
