@@ -9,7 +9,7 @@ Votre présence aux laboratoires est le meilleur moyen d'avoir les réponses aux
 - Semaine 1: Pas de labo cette semaine
 - Semaine 2: [Labo1 - Introduction à Flask](./LABO1)
 - Semaine 3: [Labo2 - Flask partie 2](./LABO2)
-- Semaine 4: à venir
+- Semaine 4: [Labo3 - Authentification](./LABO3)
 - Semaine 5: à venir
 - Semaine 6: à venir
 - Semaine 7: à venir
