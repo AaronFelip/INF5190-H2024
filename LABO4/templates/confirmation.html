@@ -1,0 +1,19 @@
+{% extends 'base.html'%}
+{% block content%}
+<main>
+    <div class="confirmation-wrapper">
+        <div class="confirmation-container">
+            <div class="confirmation-message-container">
+                <div class="confirmation-message-format">
+                    {% if name %}
+                        Bienvenu {{ name }}!
+                        <br>
+                        Vous vous êtes inscrit avec succès <br><br>
+                    {% endif %}
+                    Vous pouvez vous  <a href="{{url_for("logout")}}">déconnecter</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}

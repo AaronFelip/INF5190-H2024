@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+    <main>
+        <div class="form-wrapper">
+            <div class="form-container">
+                <form action="/page3" method="POST">
+                    <select name="liste-enfant">
+                        <option hidden value="">Combien d'enfants avez vous?</option>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                    <div class="button-container">
+                        <input type="submit" value="valider">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+{% endblock %}

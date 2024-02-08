@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block content %}
+    <main>
+        <div class="hero-text-wrapper">
+            <div class="hero-text-container">
+                <div class="hero-text-format">
+                    Si cette étape n'est pas complété<br>
+                    vous ne pourrez pas passer à la suivante!
+                </div>
+            </div>
+        </div>
+        <div class="info-session-wrapper">
+            <div class="info_session-container">
+                <div class="info-session-format">
+                    Vos variables de session contiennent l'information suivante:<br>
+                    session["nom"] = {{ nom }}<br>
+                    session["prenom"] = {{ prenom }}<br>
+                    session["ville"] = {{ ville }}<br>
+                    Si elles sont vide c'est que vous n'avez pas complétez le TODO 2
+                </div>
+            </div>
+        </div>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="error-message-format">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        <div class="form-wrapper">
+            <div class="form-container">
+                <form action="/page2" method="POST">
+                <h5>{{email}}</h5>
+                <input type="checkbox" name="valide">
+                    <div class="button-container">
+                        <input type="submit" value="valider">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+{% endblock %}

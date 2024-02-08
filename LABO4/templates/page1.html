@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+<main>
+    <div class="hero-text-wrapper">
+        <div class="hero-text-container">
+            <div class="hero-text-format">
+                Si cette étape n'est pas complété<br>
+                vous ne pourrez pas passer à la suivante!
+            </div>
+        </div>
+    </div>
+<div class="form-wrapper">
+    <div class="form-container">
+        <form action = "/page1" method="POST">
+            <label for="nom">Nom: </label>
+            <input type="text" id="nom" name="nom">
+            <br>
+            <label for="prenom">Prénom: </label>
+            <input type="text" id="prenom" name="prenom">
+            <br>
+            <label for="ville">Ville: </label>
+            <input type="text" id="ville" name="ville">
+            <br>
+            <div class="button-container">
+                <input type="submit" value="soumettre">
+            </div>
+
+        </form>
+    </div>
+</div>
+</main>
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+    <main>
+        <div class="etapes-text-wrapper">
+            <div class="etapes-text-container">
+                <div class="etapes-text-format">
+                    <h3>Adopter un animal</h3>
+                    <div class="rappel-text-container">
+                        <div class="rappel-text-format">
+                            Vous n'êtes pas sensé être en mesure de sauter une étape!
+                        </div>
+                    </div>
+                    <div class="etape-link-container">
+                        <a class="etape-button" href="/page1">Étape 1 : </a>
+                        {% if page_1_checked %}
+                            <span>Accessible ✅</span>
+                        {% else %}
+                            <span>Non-accessible ❌</span>
+                        {% endif %}
+                    </div>
+                    <div class="etape-link-container">
+                        <a class="etape-button" href="/page2">Étape 2 : </a>
+                        {% if page_2_checked %}
+                            <span>Accessible ✅</span>
+                        {% else %}
+                            <span>Non-accessible ❌</span>
+                        {% endif %}
+                    </div>
+                    <div class="etape-link-container">
+                        <a class="etape-button" href="/page3">Étape 3 : </a>
+                        {% if page_3_checked %}
+                            <span>Accessible ✅</span>
+                        {% else %}
+                            <span>Non-accessible ❌</span>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock %}
