@@ -11,10 +11,10 @@ Votre présence aux laboratoires est le meilleur moyen d'avoir les réponses aux
 - Semaine 3: [Labo2 - Flask partie 2](./LABO2)
 - Semaine 4: [Labo3 - Authentification](./LABO3)
 - Semaine 5: [Labo4 - Session avec Google login](./LABO4)
-- Semaine 6: à venir
-- Semaine 7: à venir
-- Semaine 8: à venir
-- Semaine 9: à venir
+- Semaine 6: Pas de labo cette semaine
+- Semaine 7: Pas de labo cette semaine
+- Semaine 8: Pas de labo cette semaine
+- Semaine 9: [Labo5 - Session avec Google login](./LABO4)
 - Semaine 10: à venir
 - Semaine 11: à venir
 - Semaine 12: à venir
