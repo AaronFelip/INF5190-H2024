@@ -14,8 +14,8 @@ Votre présence aux laboratoires est le meilleur moyen d'avoir les réponses aux
 - Semaine 6: Pas de labo cette semaine
 - Semaine 7: Pas de labo cette semaine
 - Semaine 8: Pas de labo cette semaine
-- Semaine 9: [Labo5 - Session avec Google login](./LABO4)
-- Semaine 10: à venir
+- Semaine 9: [Labo5 - Premier API RESTful](./LABO5)
+- Semaine 10: [Labo6 - API complet](./LABO6)
 - Semaine 11: à venir
 - Semaine 12: à venir
 - Semaine 13: à venir

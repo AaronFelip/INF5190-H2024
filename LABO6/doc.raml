@@ -1,0 +1,148 @@
+#%RAML 1.0
+title: API du labo 6
+baseUri: http://127.0.0.1:5000
+version: 1
+
+
+types:
+  Utilisateur:
+    type: object
+    properties:
+      nom: {type: string}
+      prenom: {type: string}
+      age: {type: integer}
+      date_naissance: {type: string, format: date}
+      grades_universitaires:
+        type: array
+        items: {type: string}
+    additionalProperties: false
+    example: |
+      {
+        "nom": "Doe",
+        "prenom": "John",
+        "age": 30,
+        "date_naissance": "1994-05-20",
+        "grades_universitaires": ["Baccalauréat", "Licence", "Master"]
+      }
+
+/api/utilisateur:
+  post:
+    description: Crée un nouvel utilisateur
+    body:
+      application/json:
+        type: Utilisateur
+    responses:
+      201:
+        body:
+          application/json:
+            example: |
+              {
+                "message": "L'utilisateur Aaron Osorio a été ajouté avec succès."
+              }
+      400:champs_manquant:
+        description: Champ manquant, tous les champs doivent être rempli
+        body:
+          application/json:
+            example: |
+              {
+                "'date_naissance' is a required property"
+              }
+      400:mauvais type:
+        description: Champ du mauvais type
+        body:
+          application/json:
+            example: |
+              {
+                "12 is not of type 'string'"
+              }
+      500:
+        description: Une erreur interne s'est produite. L'erreur a été signalée à l'équipe de développement.
+        body:
+          application/json:
+            example: |
+              {
+                "error": "Une erreur interne s'est produite."
+              }
+/api/utilisateur/{id}:
+  uriParameters:
+    id:
+      description: L'identifiant unique de l'utilisateur à modifier
+      type: integer
+  put:
+    description: Modifie un utilisateur existant. Tous les champs sont optionnels, et seul les champs fournis seront mis à jour.
+    body:
+      application/json:
+        type: object
+        description: Tous les champs sont optionnels pour permettre la mise à jour partielle.
+        properties:
+          nom: {type: string, required: false}
+          prenom: {type: string, required: false}
+          age: {type: integer, required: false}
+          date_naissance: {type: string, format: date, required: false}
+          grades_universitaires:
+            type: array
+            items: {type: string}
+            required: false
+        additionalProperties: false
+    responses:
+      200:
+        body:
+          application/json:
+            example: |
+              {
+                "message": "L'utilisateur avec l'id: 1 a été modifié avec succès."
+              }
+      404:
+        description: L'utilisateur spécifié n'a pas été trouvé
+        body:
+          application/json:
+            example: |
+              {
+                "error": "Utilisateur non trouvé avec l'id spécifié: 1."
+              }
+      400:mauvais type:
+        description: Champ du mauvais type
+        body:
+          application/json:
+            example: |
+              {
+                "12 is not of type 'string'"
+              }
+      500:
+        description: Une erreur interne s'est produite
+        body:
+          application/json:
+            example: |
+              {
+                "error": "Une erreur interne s'est produite."
+              }
+/api/utilisateurs:
+  get:
+    description: Récupère la liste de tous les utilisateurs.
+    responses:
+      200:
+        body:
+          application/json:
+            type: UtilisateurListe
+            example: |
+              [
+                {
+                  "id": 1,
+                  "nom": "Doe",
+                  "prenom": "John",
+                  "age": 30,
+                  "date_naissance": "1990-01-01",
+                  "grades_universitaires": ["Baccalauréat", "Licence", "Master"]
+                },
+                {
+                  "id": 2,
+                  "nom": "Roe",
+                  "prenom": "Jane",
+                  "age": 25,
+                  "date_naissance": "1995-02-02",
+                  "grades_universitaires": ["Baccalauréat", "Licence"]
+                }
+              ]
+/doc:
+  get:
+    description: Documentation de l'API
