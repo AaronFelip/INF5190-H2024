@@ -1,0 +1,12 @@
+{
+  "nom": "Doe",
+  "prenom": "John",
+  "age": 30,
+  "date_naissance": "1994-05-20",
+  "grades_universitaires": ["Baccalauréat", "Licence", "Master"]
+}
+
+{
+  "nom": "NomModifié",
+  "grades_universitaires": ["Master en Informatique", "Doctorat en Intelligence Artificielle"]
+}
