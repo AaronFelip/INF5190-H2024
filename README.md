@@ -16,11 +16,11 @@ Votre présence aux laboratoires est le meilleur moyen d'avoir les réponses aux
 - Semaine 8: Pas de labo cette semaine
 - Semaine 9: [Labo5 - Premier API RESTful](./LABO5)
 - Semaine 10: [Labo6 - API complet](./LABO6)
-- Semaine 11: à venir
-- Semaine 12: à venir
-- Semaine 13: à venir
-- Semaine 14: à venir
-- Semaine 15: à venir
+- Semaine 11: [Labo7 - Requête asynchrone](./LABO7)
+- Semaine 12: [Labo8 - Flex-box](./LABO8)
+- Semaine 13: Aide TP2
+- Semaine 14: Pas de labo
+- Semaine 15: Pas de labo
 
 ## Me rejoindre:
 Si vous avez des questions sur la matière vu en classe ou dans les labos, 

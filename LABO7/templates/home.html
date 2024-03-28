@@ -1,0 +1,26 @@
+{% extends "default.html" %}
+{% block content %}
+
+{% for person in persons %}
+  <div>
+    <a id="link" href="#" onclick="get_informations( {{ person[0] }})">
+      {{ person[1] }}
+    </a>
+  </div>
+{% endfor %}
+
+<div id="name"></div>
+
+<script>
+  function get_informations(id){
+    fetch('/get-info/'+id)
+    .then(function (response) {
+      return response.text();
+    }).then(function (text) {
+      //console.log(text);
+      document.getElementById("name").innerHTML = text;
+    })
+  }
+</script>
+
+{% endblock %}
